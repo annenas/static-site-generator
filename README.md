@@ -5,7 +5,7 @@ The `templates` folder is used for storing all Nunjucks partials and other Nunju
 
 The `layout` file in the `templates` folder contains boilerplate code like `<html>`, `<head>` and `<body>` tags. It also contains things that are similar across all pages, like links to CSS and JavaScript files.
 
-The `pages` folder is used for creating pages that will be compiled into HTML. Once they are compiled, they will be placed in the `dist` folder.
+The `pages` folder is used for creating pages that will be compiled into HTML. Once they are compiled, they will be placed in the newly created `dist` folder.
 
 
 ### Usage
