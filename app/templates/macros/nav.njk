@@ -1,0 +1,12 @@
+{% macro renderNav(activePage = 'index') %}
+  <nav class="nav">
+    <ul class="nav-list">
+      <li class="nav-item {%if activePage == 'index' %} nav-item--active {% endif %}">
+        <a href="/">Home</a>
+      </li>
+      <li class="nav-item {%if activePage == 'about' %} nav-item--active {% endif %}">
+        <a href="/about.html">About</a>
+      </li>
+    </ul>
+  </nav>
+{% endmacro %}

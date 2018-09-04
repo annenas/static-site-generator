@@ -1,0 +1,52 @@
+@mixin flexgrid-mixin($cols, $margin) {
+  $width: (100% / $cols);
+  $calc-margin: (($margin * $cols) - $margin) / $cols;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &:after {
+    flex: auto;
+    margin: 0 auto;
+    content: "";
+  }
+  .flexgrid-item {
+    width: calc( #{$width} - #{$calc-margin} );
+    margin-left: $margin / 2;
+    margin-right: $margin/ 2;
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+    &:nth-child(#{$cols}n) {
+      margin-right: 0;
+    }
+    &:nth-child(#{$cols}n + 1) {
+      margin-left: 0;
+    }
+  }
+}
+
+.flexgrid {
+  margin-top: 2rem;
+  @media screen and (min-width: 600px) and (max-width: 799px) {
+    @include flexgrid-mixin(2, 1rem);
+  }
+  @media screen and (min-width: 800px) and (max-width: 999px) {
+    @include flexgrid-mixin(3, 1rem);
+  }
+  @media screen and (min-width: 1000px) {
+    @include flexgrid-mixin(4, 1rem);
+  }
+}
+
+.flexgrid-item {
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-size: cover;
+  background-position: center;
+}

@@ -1,0 +1,31 @@
+.nav {
+  height: 3.125rem;
+  padding: 1rem 1.25rem;
+  background-color: white;
+  border-bottom: 1px solid #eaecef;
+  margin-bottom: 4rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  padding: 0 0.625rem;
+
+  a {
+    color: $color-text;
+    border-bottom: 2px solid transparent;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+}
+
+.nav-item--active a {
+  font-weight: bold;
+  border-bottom: 2px solid $color-primary;
+}

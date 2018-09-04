@@ -1,0 +1,12 @@
+{% extends "layout.njk" %}
+
+  {% block content %}
+    <div class="wrapper">
+      {% import 'macros/nav.njk' as nav %}
+      {{nav.renderNav('about')}}
+      
+      <h2>About</h2>
+    </div>
+  {% endblock %}
+
+

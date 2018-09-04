@@ -1,0 +1,9 @@
+  <div class="flexgrid">
+    <!-- Loops through "images" array in data.json file -->
+    {% for image in images %}
+      <div class="flexgrid-item" style="background-image: url({{image.src}})"></div>
+    {% endfor %}
+  </div>
+
+
+

@@ -1,0 +1,11 @@
+{% extends "layout.njk" %}
+
+  {% block content %}
+    <div class="wrapper">
+      {% import 'macros/nav.njk' as nav %}
+      {{nav.renderNav('index')}}
+      
+      <h2>Hello world</h2>
+      {% include "partials/gallery.njk" %}
+    </div>
+  {% endblock %}

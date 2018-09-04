@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "src": "img/unsplash1.jpg",
+      "alt": "Image one alt text"
+    },
+    {
+      "src": "img/unsplash2.jpg",
+      "alt": "Image two alt text"
+    },
+    {
+      "src": "img/unsplash3.jpg",
+      "alt": "Image three alt text"
+    },
+    {
+      "src": "img/unsplash4.jpg",
+      "alt": "Image four alt text"
+    },
+    {
+      "src": "img/unsplash5.jpg",
+      "alt": "Image five alt text"
+    },
+    {
+      "src": "img/unsplash6.jpg",
+      "alt": "Image six alt text"
+    }
+  ]
+}
