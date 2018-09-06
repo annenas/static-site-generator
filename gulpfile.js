@@ -85,7 +85,7 @@ gulp.task("serve", ["sass", "nunjucks-html-watch"], function() {
   });
 
   gulp.watch("app/styles/**/*.scss", ["sass"]);
-  gulp.watch("app/pages/*.html", ["nunjucks-html-watch"]);
+  gulp.watch("app/pages/**/*.+(html|njk|nunjucks)", ["nunjucks-html-watch"]);
 });
 
 // Compile project
